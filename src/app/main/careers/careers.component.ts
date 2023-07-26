@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from "@ngx-translate/core";
+import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { SharedModule } from "../../shared/shared.module";
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-careers',
@@ -15,9 +16,20 @@ export class CareersComponent implements OnInit {
     public formSubHeading: string = 'careers_subheading';
     public fileBtnName: string = 'careers_file-btn';
 
-    constructor() {
-    }
+    constructor(private titleService: Title, private translate: TranslateService) {}
 
     ngOnInit(): void {
+        this.setPageTitle();
+
+        this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+            this.setPageTitle();
+        });
     }
+
+    setPageTitle(): void {
+        this.translate.get('careers').subscribe((heading: string) => {
+            this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
+    }
+
 }

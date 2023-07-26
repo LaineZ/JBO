@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-advertiser',
@@ -29,10 +30,20 @@ export class AdvertiserComponent implements OnInit {
         }
     ]
 
-    constructor() {
-    }
+    constructor(private titleService: Title, private translate: TranslateService) {}
 
     ngOnInit(): void {
+        this.setPageTitle();
+
+        this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+            this.setPageTitle();
+        });
+    }
+
+    setPageTitle(): void {
+        this.translate.get('advertiser').subscribe((heading: string) => {
+            this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
     }
 
     public index(index: number) {

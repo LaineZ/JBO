@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { firstValueFrom } from 'rxjs';
 import { SwiperComponent, SwiperModule } from 'swiper/angular';
 import {
@@ -13,6 +13,7 @@ import {
 import { FirestoreService } from '../../shared/services/firestore.service';
 import { SharedModule } from '../../shared/shared.module';
 import { PartnersComponent } from '../partners/partners.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-home-page',
@@ -59,14 +60,27 @@ export class HomePageComponent implements OnInit {
         1800: { slidesPerView: 3 },
     };
 
-    constructor(private firestore: FirestoreService) {}
+    constructor(private firestore: FirestoreService, private titleService: Title, 
+        private translate: TranslateService) { }
 
     async ngOnInit(): Promise<void> {
         this.eventsList = await firstValueFrom(this.firestore.getEvents());
         this.reviewList = await firstValueFrom(this.firestore.getReviews());
         this.statisticsList = await firstValueFrom(this.firestore.getStats());
         this.articlesList = await firstValueFrom(this.firestore.getBlogArticles());
+        this.setPageTitle();
+
+        this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+            this.setPageTitle();
+        });
     }
+
+    setPageTitle(): void {
+        this.translate.get('home_page-title').subscribe((heading: string) => {
+            this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
+    }
+
 
     public slideNext(identifier: string): void {
         switch (identifier) {

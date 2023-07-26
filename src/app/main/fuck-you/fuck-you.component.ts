@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from "@ngx-translate/core";
 import { SharedModule } from "../../shared/shared.module";
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fuck-you',
@@ -12,9 +13,10 @@ import { SharedModule } from "../../shared/shared.module";
 })
 export class FuckYouComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) {}
 
   ngOnInit(): void {
+      this.titleService.setTitle("FAQ | Financial Network - JBO Marketing");
   }
 
 }
