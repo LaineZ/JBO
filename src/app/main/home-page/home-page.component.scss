@@ -110,7 +110,7 @@
         border: none;
 
         &-box {
-            background-image: url(~src/assets/img/home-page-card.png);
+            background-image: url(~src/assets/img/home-page-card.webp);
             background-size: cover;
             border-radius: 2.25rem;
             padding: 2rem;
@@ -262,7 +262,7 @@
             .stats-box {
                 &-card {
                     color: #fff;
-                    background-image: url(~src/assets/img/home-stats-bg.png);
+                    background-image: url(~src/assets/img/home-stats-bg.webp);
                     height: 12.5rem;
                     background-size: cover;
                     background-position: center;
@@ -470,11 +470,11 @@
             }
 
             .affiliates {
-                background: url(~src/assets/img/home-features-img-1.png);
+                background: url(~src/assets/img/home-features-img-1.webp);
             }
 
             .advertisers {
-                background: url(~src/assets/img/home-features-img-2.png);
+                background: url(~src/assets/img/home-features-img-2.webp);
             }
         }
 
@@ -521,7 +521,7 @@
         width: 100%;
 
         &-card {
-            background-image: url(~src/assets/img/home-interactive-bg.png);
+            background-image: url(~src/assets/img/home-interactive-bg.webp);
 
             &-box {
                 background: linear-gradient(

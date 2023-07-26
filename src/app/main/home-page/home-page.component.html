@@ -12,7 +12,7 @@
 
         <div class="greeting-box-video">
             <video [autoplay]="true" [muted]="true" [loop]="true" playsinline="true">
-                <source src="assets/video/Frame_41303.mp4" type="video/mp4" />
+                <source src="assets/video/Frame_41303.webm" type="video/webm" />
                 Your browser is not supporting video tag!
             </video>
         </div>
@@ -62,7 +62,7 @@
         <div class="stats-heading">
             <h2>{{ "home_stats-heading" | translate }}</h2>
 
-            <img src="assets/img/home-page-start-img.png" alt="Start Working">
+            <img src="assets/img/home-page-start-img.webp" alt="Start Working">
 
             <div class="stats-heading-btn">
                 <p>{{ "home_stats-subheading" | translate }}</p>
@@ -103,7 +103,7 @@
                                             <img *ngIf="geo === 'ua' || geo === 'sp' || geo === 'pt'; else otherGeo"
                                                  [src]="'assets/img/' + geo + '.svg'" [alt]="geo">
                                             <ng-template #otherGeo>
-                                                <img [src]="'assets/img/' + geo + '.png'" width="36" height="36"
+                                                <img [src]="'assets/img/' + geo + '.webp'" width="36" height="36"
                                                      [alt]="geo">
                                             </ng-template>
                                         </ng-container>
@@ -169,7 +169,7 @@
                 <h2>{{ "home_text-block-1_heading" | translate }}</h2>
                 <p>{{ "home_text-block-1_subheading" | translate }}</p>
             </div>
-            <img src="assets/img/home-text-img-1.png" alt="Text-img">
+            <img src="assets/img/home-text-img-1.webp" alt="Text-img">
         </div>
 
         <div class="text-block">
@@ -177,7 +177,7 @@
                 <h2>{{ "home_text-block-2_heading" | translate }}</h2>
                 <p>{{ "home_text-block-2_subheading" | translate }}</p>
             </div>
-            <img src="assets/img/home-text-img-2.png" alt="Text-img">
+            <img src="assets/img/home-text-img-2.webp" alt="Text-img">
         </div>
     </section>
 
@@ -198,7 +198,7 @@
     </section>
 
     <section class="faq">
-        <img src="assets/img/home-faq-img.png" alt="FAQ-img">
+        <img src="assets/img/home-faq-img.webp" alt="FAQ-img">
 
         <section class="questions">
             <app-question question="{{ 'question-1' | translate }}"

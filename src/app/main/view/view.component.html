@@ -88,7 +88,7 @@
                                     <ng-container *ngFor="let geo of stat.geo">
                                         <img *ngIf="geo === 'ua' || geo === 'sp' || geo === 'pt'; else otherGeo" [src]="'assets/img/' + geo + '.svg'" [alt]="geo">
                                         <ng-template #otherGeo>
-                                            <img [src]="'assets/img/' + geo + '.png'" width="36" height="36" [alt]="geo">
+                                            <img [src]="'assets/img/' + geo + '.webp'" width="36" height="36" [alt]="geo">
                                         </ng-template>
                                     </ng-container>
                                 </div>
@@ -233,7 +233,7 @@
     <section class="webmaster" *ngIf="!isDark">
         <div class="picbox">
             <p class="picbox__master">{{ 'web-master' | translate }}</p>
-            <img src="assets/img/car.png" alt="car" class="picbox__pic rotating">
+            <img src="assets/img/car.webp" alt="car" class="picbox__pic rotating">
             <p class="picbox__affiliate">{{ 'affiliate' | translate }}</p>
         </div>
         <div class="textbox">

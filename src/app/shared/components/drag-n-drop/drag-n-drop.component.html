@@ -2,7 +2,7 @@
 
     <label *ngIf="!file" for="fileUpload" class="add-btn">
         <input style="display: none;" type="file" id="fileUpload" placeholder="Add your CV"
-            accept=".png, .doc, .docx, .pdf," (change)="handleBrowse($event)">
+            accept=".webp, .doc, .docx, .pdf," (change)="handleBrowse($event)">
         <span>&plus;</span>{{ label }}
     </label>
 
