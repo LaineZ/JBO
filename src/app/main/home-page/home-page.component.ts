@@ -13,7 +13,7 @@ import {
 import { FirestoreService } from '../../shared/services/firestore.service';
 import { SharedModule } from '../../shared/shared.module';
 import { PartnersComponent } from '../partners/partners.component';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-home-page',
@@ -61,7 +61,7 @@ export class HomePageComponent implements OnInit {
     };
 
     constructor(private firestore: FirestoreService, private titleService: Title, 
-        private translate: TranslateService) { }
+        private translate: TranslateService, private meta: Meta) { }
 
     async ngOnInit(): Promise<void> {
         this.eventsList = await firstValueFrom(this.firestore.getEvents());
@@ -78,6 +78,10 @@ export class HomePageComponent implements OnInit {
     setPageTitle(): void {
         this.translate.get('home_page-title').subscribe((heading: string) => {
             this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
+
+        this.translate.get('home_page-meta-description').subscribe((newMetaDescription: string) => {
+            this.meta.updateTag({ name: 'description', content: newMetaDescription });
         });
     }
 

@@ -13,10 +13,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class FuckYouComponent implements OnInit {
 
-  constructor(private titleService: Title) {}
+  constructor() {}
 
-  ngOnInit(): void {
-      this.titleService.setTitle("FAQ | Financial Network - JBO Marketing");
-  }
+  ngOnInit(): void {}
 
 }

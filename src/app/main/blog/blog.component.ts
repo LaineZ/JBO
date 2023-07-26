@@ -5,7 +5,7 @@ import { BehaviorSubject, firstValueFrom } from 'rxjs';
 import { IArticle } from '../../shared/constants/firebase.interface';
 import { FirestoreService } from '../../shared/services/firestore.service';
 import { SharedModule } from '../../shared/shared.module';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-blog',
@@ -18,7 +18,8 @@ export class BlogComponent implements OnInit {
     public articlesList?: IArticle[];
     public canLoadMore = new BehaviorSubject<boolean>(true);
 
-    constructor(private firestore: FirestoreService, private titleService: Title, private translate: TranslateService) {}
+    constructor(private firestore: FirestoreService, private titleService: Title, private translate: TranslateService, 
+        private meta: Meta) {}
 
     async ngOnInit(): Promise<void> {
         this.articlesList = await firstValueFrom(
@@ -35,6 +36,10 @@ export class BlogComponent implements OnInit {
     setPageTitle(): void {
         this.translate.get('blog').subscribe((heading: string) => {
             this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
+
+        this.translate.get('blog_page-meta-description').subscribe((newMetaDescription: string) => {
+            this.meta.updateTag({ name: 'description', content: newMetaDescription });
         });
     }
 

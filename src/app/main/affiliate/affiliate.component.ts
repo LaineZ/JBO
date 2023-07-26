@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-affiliate',
@@ -30,7 +30,7 @@ export class AffiliateComponent implements OnInit {
         }
     ]
 
-    constructor(private titleService: Title, private translate: TranslateService) {}
+    constructor(private titleService: Title, private translate: TranslateService, private meta: Meta) {}
 
     ngOnInit(): void {
         this.setPageTitle();
@@ -43,6 +43,10 @@ export class AffiliateComponent implements OnInit {
     setPageTitle(): void {
         this.translate.get('affiliate').subscribe((heading: string) => {
             this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+        });
+
+        this.translate.get('affiliate_page-meta-description').subscribe((newMetaDescription: string) => {
+            this.meta.updateTag({ name: 'description', content: newMetaDescription });
         });
     }
 
