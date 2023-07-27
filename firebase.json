@@ -39,8 +39,14 @@
         "destination": "/robots.txt"
       },
       {
+        "source": "/home",
+        "destination": "/index.html",
+        "type": 404
+      },
+      {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/404.html",
+        "type": 404
       }
     ],
     "redirects": [ {
