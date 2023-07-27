@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from "@ngx-translate/core";
+import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { SharedModule } from "../../shared/shared.module";
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fuck-you',
@@ -13,8 +13,24 @@ import { Title } from '@angular/platform-browser';
 })
 export class FuckYouComponent implements OnInit {
 
-  constructor() {}
+  constructor(private translate: TranslateService, private meta: Meta, private titleService: Title) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.setPageTitle();
+    
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.setPageTitle();
+  });
+  }
+
+  setPageTitle(): void {
+    this.translate.get('faq').subscribe((heading: string) => {
+      this.titleService.setTitle(`${heading} | Financial Network - JBO Marketing`);
+  });
+
+    this.translate.get('faq_page-meta-description').subscribe((newMetaDescription: string) => {
+        this.meta.updateTag({ name: 'description', content: newMetaDescription });
+    });
+}
 
 }
