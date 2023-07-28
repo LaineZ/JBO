@@ -44,6 +44,16 @@ const routes: Routes = [
             import('./main/privacy-doc/privacy-doc.component').then((c) => c.PrivacyDocComponent),
     },
     {
+        path: 'terms',
+        loadComponent: () =>
+            import('./main/terms-of-use-doc/terms-of-use-doc.component').then((c) => c.TermsOfUseDocComponent),
+    },
+    {
+        path: 'cookies',
+        loadComponent: () =>
+            import('./main/privacy-cookies-doc/privacy-cookies-doc.component').then((c) => c.PrivacyCookiesDocComponent),
+    },
+    {
         path: 'careers',
         loadComponent: () =>
             import('./main/careers/careers.component').then((c) => c.CareersComponent),
