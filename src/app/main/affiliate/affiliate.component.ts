@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-affiliate',
@@ -30,9 +31,17 @@ export class AffiliateComponent implements OnInit {
         }
     ]
 
-    constructor(private titleService: Title, private translate: TranslateService, private meta: Meta) {}
+    constructor(private titleService: Title, private translate: TranslateService, private meta: Meta, private route: ActivatedRoute) {}
 
     ngOnInit(): void {
+        this.route.paramMap.subscribe(params => {
+            const lang = params.get('lang');
+            if (lang != null) {
+                this.translate.use(lang);
+                this.translate.currentLang = lang;
+            }
+        });
+
         this.setPageTitle();
 
         this.translate.onLangChange.subscribe((event: LangChangeEvent) => {

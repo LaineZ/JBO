@@ -6,6 +6,7 @@ import { IArticle } from '../../shared/constants/firebase.interface';
 import { FirestoreService } from '../../shared/services/firestore.service';
 import { SharedModule } from '../../shared/shared.module';
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-blog',
@@ -19,9 +20,18 @@ export class BlogComponent implements OnInit {
     public canLoadMore = new BehaviorSubject<boolean>(true);
 
     constructor(private firestore: FirestoreService, private titleService: Title, private translate: TranslateService, 
-        private meta: Meta) {}
+        private meta: Meta, private route: ActivatedRoute) {}
 
     async ngOnInit(): Promise<void> {
+        this.route.paramMap.subscribe(params => {
+            const lang = params.get('lang');
+            if (lang != null) {
+                this.translate.use(lang);
+                this.translate.currentLang = lang;
+            }
+        });
+
+
         this.articlesList = await firstValueFrom(
             this.firestore.getBlogArticles(9)
         );

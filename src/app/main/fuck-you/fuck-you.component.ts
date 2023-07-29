@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { SharedModule } from "../../shared/shared.module";
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-fuck-you',
@@ -13,10 +14,18 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class FuckYouComponent implements OnInit {
 
-  constructor(private translate: TranslateService, private meta: Meta, private titleService: Title) {}
+  constructor(private translate: TranslateService, private meta: Meta, private titleService: Title, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.setPageTitle();
+
+    this.route.paramMap.subscribe(params => {
+      const lang = params.get('lang');
+      if (lang != null) {
+          this.translate.use(lang);
+          this.translate.currentLang = lang;
+      }
+  });
     
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.setPageTitle();

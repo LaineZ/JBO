@@ -14,7 +14,16 @@ const routes: Routes = [
         component: HomePageComponent,
     },
     {
+        path: 'home/:lang',
+        component: HomePageComponent,
+    },
+    {
         path: 'advertiser',
+        loadComponent: () =>
+            import('./main/advertiser/advertiser.component').then((c) => c.AdvertiserComponent),
+    },
+    {
+        path: 'advertiser/:lang',
         loadComponent: () =>
             import('./main/advertiser/advertiser.component').then((c) => c.AdvertiserComponent),
     },

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LangChangeEvent, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { SharedModule } from "../../shared/shared.module";
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-careers',
@@ -16,9 +17,17 @@ export class CareersComponent implements OnInit {
     public formSubHeading: string = 'careers_subheading';
     public fileBtnName: string = 'careers_file-btn';
 
-    constructor(private titleService: Title, private translate: TranslateService, private meta: Meta) {}
+    constructor(private titleService: Title, private translate: TranslateService, private meta: Meta, private route: ActivatedRoute) {}
 
     ngOnInit(): void {
+        this.route.paramMap.subscribe(params => {
+            const lang = params.get('lang');
+            if (lang != null) {
+                this.translate.use(lang);
+                this.translate.currentLang = lang;
+            }
+        });
+
         this.setPageTitle();
 
         this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
