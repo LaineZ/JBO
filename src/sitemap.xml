@@ -1,4 +1,6 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://jbomarketing.com/</loc>
     </url>
@@ -6,9 +8,33 @@
         <loc>https://jbomarketing.com/about-us</loc>
         <image:image><image:loc>https://jbomarketing.com/assets/img/about-head-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/about-text-img.webp</image:loc></image:image>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/about-us/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/about-us/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/about-us/ua"/>
     </url>
     <url>
         <loc>https://jbomarketing.com/advertiser</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/advertiser/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/advertiser/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/advertiser/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/advertiser-head-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc></image:image>
@@ -16,6 +42,18 @@
     </url>
     <url>
         <loc>https://jbomarketing.com/affiliate</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/affiliate/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/affiliate/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/affiliate/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-heading-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc></image:image>
@@ -23,14 +61,50 @@
     </url>
     <url>
         <loc>https://jbomarketing.com/blog</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/blog/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/blog/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/blog/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/blog-heading-img.webp</image:loc></image:image>
     </url>
     <url>
         <loc>https://jbomarketing.com/careers</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/careers/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/careers/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/careers/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/careers-heading-img.webp</image:loc></image:image>
     </url>
     <url>
         <loc>https://jbomarketing.com/contacts</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/contacts/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/contacts/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/contacts/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/contact-img.webp</image:loc></image:image>
     </url>
     <url>
@@ -42,6 +116,18 @@
     </url>
     <url>
         <loc>https://jbomarketing.com/home</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/home/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/home/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/home/ua"/>
         <image:image><image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc></image:image>
         <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc></image:image>

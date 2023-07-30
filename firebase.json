@@ -19,7 +19,7 @@
           },
           {
             "key": "Content-Security-Policy",
-            "value": "script-src 'self' firestore.googleapis.com; img-src *;"
+            "value": "script-src 'self' firestore.googleapis.com; img-src *; google.com;"
           }
         ]
       },
@@ -37,6 +37,10 @@
       {
         "source": "/robots.txt",
         "destination": "/robots.txt"
+      },
+      {
+        "source": "/sitemap.xml",
+        "destination": "/robots.xml"
       },
       {
         "source": "/home",

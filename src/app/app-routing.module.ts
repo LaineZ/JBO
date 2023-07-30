@@ -33,7 +33,17 @@ const routes: Routes = [
             import('./main/affiliate/affiliate.component').then((c) => c.AffiliateComponent),
     },
     {
+        path: 'affiliate/:lang',
+        loadComponent: () =>
+            import('./main/affiliate/affiliate.component').then((c) => c.AffiliateComponent),
+    },
+    {
         path: 'about-us',
+        loadComponent: () =>
+            import('./main/about/about.component').then((c) => c.AboutComponent),
+    },
+    {
+        path: 'about-us/:lang',
         loadComponent: () =>
             import('./main/about/about.component').then((c) => c.AboutComponent),
     },
@@ -43,7 +53,17 @@ const routes: Routes = [
             import('./main/contact/contact.component').then((c) => c.ContactComponent),
     },
     {
+        path: 'contacts/:lang',
+        loadComponent: () =>
+            import('./main/contact/contact.component').then((c) => c.ContactComponent),
+    },
+    {
         path: 'faq',
+        loadComponent: () =>
+            import('./main/fuck-you/fuck-you.component').then((c) => c.FuckYouComponent),
+    },
+    {
+        path: 'faq/:lang',
         loadComponent: () =>
             import('./main/fuck-you/fuck-you.component').then((c) => c.FuckYouComponent),
     },
@@ -68,7 +88,17 @@ const routes: Routes = [
             import('./main/careers/careers.component').then((c) => c.CareersComponent),
     },
     {
+        path: 'careers/:lang',
+        loadComponent: () =>
+            import('./main/careers/careers.component').then((c) => c.CareersComponent),
+    },
+    {
         path: 'blog',
+        loadComponent: () =>
+            import('./main/blog/blog.component').then((c) => c.BlogComponent),
+    },
+    {
+        path: 'blog/:lang',
         loadComponent: () =>
             import('./main/blog/blog.component').then((c) => c.BlogComponent),
     },
