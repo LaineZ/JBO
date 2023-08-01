@@ -68,21 +68,6 @@ const routes: Routes = [
             import('./main/fuck-you/fuck-you.component').then((c) => c.FuckYouComponent),
     },
     {
-        path: 'privacy',
-        loadComponent: () =>
-            import('./main/privacy-doc/privacy-doc.component').then((c) => c.PrivacyDocComponent),
-    },
-    {
-        path: 'terms',
-        loadComponent: () =>
-            import('./main/terms-of-use-doc/terms-of-use-doc.component').then((c) => c.TermsOfUseDocComponent),
-    },
-    {
-        path: 'cookies',
-        loadComponent: () =>
-            import('./main/privacy-cookies-doc/privacy-cookies-doc.component').then((c) => c.PrivacyCookiesDocComponent),
-    },
-    {
         path: 'careers',
         loadComponent: () =>
             import('./main/careers/careers.component').then((c) => c.CareersComponent),
@@ -106,6 +91,9 @@ const routes: Routes = [
         path: 'article/:id',
         component: BlogArticleComponent
     },
+    { path: 'privacy', loadChildren: () => import('./privacy-doc/privacy-doc.module').then(m => m.PrivacyDocModule) },
+    { path: 'cookies', loadChildren: () => import('./cookies-doc/cookies-doc.module').then(m => m.CookiesDocModule) },
+    { path: 'terms', loadChildren: () => import('./terms-of-use-doc/terms-of-use-doc.module').then(m => m.TermsOfUseDocModule) },
     {
         path: '**',
         redirectTo: '/home',
