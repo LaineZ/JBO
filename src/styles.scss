@@ -46,7 +46,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 75%;
     font-family: "Gilroy", sans-serif;
     font-weight: 300;
 
@@ -370,17 +369,18 @@ img {
 // Cards Section Styling
 .cards {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     gap: 2rem;
 
     &-item {
-        padding: 1.75rem;
+        padding: 1.5rem;
         border: 2px solid $black;
         border-radius: 3.125rem;
-        width: 19rem;
+        flex: 1 1;
         min-width: min-content;
+        max-width: 30rem;
         transition: all .3s;
 
         &:hover {
@@ -395,17 +395,18 @@ img {
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 1rem 0;
         }
 
         p {
-            font-size: 1rem;
+            font-size: .75rem;
             font-weight: 500;
         }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 975px) {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
