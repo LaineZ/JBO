@@ -40,12 +40,95 @@
       },
       {
         "source": "/sitemap.xml",
-        "destination": "/robots.xml"
+        "destination": "/sitemap.xml"
+      },
+      {
+        "source": "/home/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/blog/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/affiliate/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/advertiser/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/careers/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about-us/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contacts/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/faq/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/privacy/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cookies/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/terms/**",
+        "destination": "/index.html"
       },
       {
         "source": "/home",
-        "destination": "/index.html",
-        "type": 404
+        "destination": "/index.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/affiliate",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/advertiser",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/careers",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about-us",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contacts",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cookies",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/terms",
+        "destination": "/index.html"
       },
       {
         "source": "**",
