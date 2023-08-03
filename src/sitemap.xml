@@ -1,134 +1,420 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://jbomarketing.com/home</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/home/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/home/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/home/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/home/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/home/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/home/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/home/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/about-us</loc>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/about-head-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/about-text-img.webp</image:loc></image:image>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/about-us/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/about-us/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/about-us/ua"/>
+        <loc>https://jbomarketing.com/about-us/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/about-us/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/about-us/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/about-us/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-text-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/advertiser</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/advertiser/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/advertiser/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/advertiser/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/advertiser-head-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/advertiser/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/advertiser/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/advertiser/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/advertiser/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/advertiser-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/affiliate</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/affiliate/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/affiliate/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/affiliate/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-heading-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/affiliate/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/affiliate/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/affiliate/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/affiliate/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-heading-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/blog</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/blog/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/blog/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/blog/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/blog-heading-img.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/blog/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/blog/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/blog/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/blog/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/blog-heading-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/careers</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/careers/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/careers/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/careers/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/careers-heading-img.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/careers/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/careers/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/careers/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/careers/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/careers-heading-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/contacts</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/contacts/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/contacts/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/contacts/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/contact-img.webp</image:loc></image:image>
+        <loc>https://jbomarketing.com/contacts/en</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/contacts/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/contacts/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/contacts/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/contact-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
-        <loc>https://jbomarketing.com/cookies</loc>
+        <loc>https://jbomarketing.com/home/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/home/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/home/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/home/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/about-us/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/about-us/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/about-us/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/about-us/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-text-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/advertiser/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/advertiser/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/advertiser/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/advertiser/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/advertiser-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/affiliate/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/affiliate/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/affiliate/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/affiliate/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-heading-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/blog/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/blog/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/blog/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/blog/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/blog-heading-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/careers/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/careers/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/careers/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/careers/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/careers-heading-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/contacts/ru</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/contacts/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/contacts/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/contacts/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/contact-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/home/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/home/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/home/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/home/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/about-us/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/about-us/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/about-us/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/about-us/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/about-text-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/advertiser/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/advertiser/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/advertiser/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/advertiser/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/advertiser-head-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/affiliate/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/affiliate/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/affiliate/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/affiliate/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-heading-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-card-img.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-1.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/affiliate-text-img-2.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/blog/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/blog/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/blog/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/blog/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/blog-heading-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/careers/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/careers/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/careers/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/careers/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/careers-heading-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/contacts/ua</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ru"
+                    href="https://jbomarketing.com/contacts/ru" />
+        <xhtml:link rel="alternate"
+                    hreflang="en"
+                    href="https://jbomarketing.com/contacts/en" />
+        <xhtml:link rel="alternate"
+                    hreflang="uk"
+                    href="https://jbomarketing.com/contacts/ua" />
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/contact-img.webp</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://jbomarketing.com/faq</loc>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/fuck-u-img.webp</image:loc></image:image>
+        <image:image>
+            <image:loc>https://jbomarketing.com/assets/img/fuck-u-img.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://jbomarketing.com/cookies</loc>
     </url>
     <url>
         <loc>https://jbomarketing.com/privacy</loc>
