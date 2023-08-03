@@ -138,7 +138,7 @@
     ],
     "redirects": [ {
       "source": "/",
-      "destination": "/home",
+      "destination": "/home/en",
       "type": 301
     } ]
   

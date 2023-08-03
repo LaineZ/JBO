@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from "@angular/router";
+import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { BehaviorSubject, fromEvent } from 'rxjs';
 import { StateService } from '../../services/state.service';
+import { Location } from '@angular/common';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-menu',
@@ -45,8 +47,7 @@ export class MenuComponent implements OnInit {
         },
     ]
 
-    constructor(private state: StateService,
-                private router: Router) {
+    constructor(private router: Router, private location: Location, private translate: TranslateService) {
         fromEvent(window, 'resize').subscribe(() => this.burger());
         this.burger();
 
@@ -59,6 +60,19 @@ export class MenuComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+            this.replaceLastSegment(event.lang);
+        });
+    }
+
+    replaceLastSegment(newSegment: string): void {
+        const currentUrl = this.location.path();
+        const segments = currentUrl.split('/');
+        if (segments.length > 0) {
+            segments[segments.length - 1] = newSegment;
+            const newUrl = segments.join('/');
+            this.router.navigateByUrl(newUrl);
+        }
     }
 
     public burger(): void {
@@ -75,7 +89,14 @@ export class MenuComponent implements OnInit {
         const checkbox = document.getElementById('navi-toggle');
         if (checkbox != null) checkbox.click();
 
-        this.router.navigate(['', pageName]).then(() => this.getActiveTab(pageName));
+        const currentUrl = this.location.path().split("/");
+        const val = currentUrl.pop();
+
+        if (val == "ru" || val == "en" || val == "ua") {
+            this.router.navigate(['/', pageName, val]).then(() => this.getActiveTab(pageName));
+        } else {
+            this.router.navigate(['/', pageName, this.translate.currentLang]).then(() => this.getActiveTab(pageName));
+        }
     }
 
     public getActiveTab(pageName: string): void {

@@ -2,7 +2,23 @@
 <urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://jbomarketing.com/</loc>
+        <loc>https://jbomarketing.com/home</loc>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ru"
+               href="https://jbomarketing.com/home/ru"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://jbomarketing.com/home/en"/>
+            <xhtml:link
+               rel="alternate"
+               hreflang="ua"
+               href="https://jbomarketing.com/home/ua"/>
+        <image:image><image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc></image:image>
+        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc></image:image>
+        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc></image:image>
+        <image:image><image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc></image:image>
     </url>
     <url>
         <loc>https://jbomarketing.com/about-us</loc>
@@ -113,25 +129,6 @@
     <url>
         <loc>https://jbomarketing.com/faq</loc>
         <image:image><image:loc>https://jbomarketing.com/assets/img/fuck-u-img.webp</image:loc></image:image>
-    </url>
-    <url>
-        <loc>https://jbomarketing.com/home</loc>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ru"
-               href="https://jbomarketing.com/home/ru"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://jbomarketing.com/home/en"/>
-            <xhtml:link
-               rel="alternate"
-               hreflang="ua"
-               href="https://jbomarketing.com/home/ua"/>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-page-start-img.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-1.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-text-img-2.webp</image:loc></image:image>
-        <image:image><image:loc>https://jbomarketing.com/assets/img/home-faq-img.webp</image:loc></image:image>
     </url>
     <url>
         <loc>https://jbomarketing.com/privacy</loc>

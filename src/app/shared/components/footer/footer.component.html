@@ -30,11 +30,11 @@
 
     <div class="footer-pages">
         <h5>{{'pages' | translate | uppercase}}</h5>
-        <a [routerLink]="['home']">{{'home' | translate}}</a>
-        <a [routerLink]="['careers']">{{ 'careers' | translate}}</a>
-        <a [routerLink]="['about-us']">{{ 'about-us' | translate }}</a>
-        <a [routerLink]="['blog']">{{ 'blog' | translate }}</a>
-        <a [routerLink]="['contacts']">{{ 'contacts' | translate }}</a>
+        <a [routerLink]="['home', currentLang]">{{'home' | translate}}</a>
+        <a [routerLink]="['careers', currentLang]">{{ 'careers' | translate}}</a>
+        <a [routerLink]="['about-us', currentLang]">{{ 'about-us' | translate }}</a>
+        <a [routerLink]="['blog', currentLang]">{{ 'blog' | translate }}</a>
+        <a [routerLink]="['contacts', currentLang]">{{ 'contacts' | translate }}</a>
     </div>
 
     <div class="footer-info">
