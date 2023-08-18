@@ -68,7 +68,8 @@ export class MenuComponent implements OnInit {
     replaceLastSegment(newSegment: string): void {
         const currentUrl = this.location.path();
         const segments = currentUrl.split('/');
-        if (segments.length > 0) {
+        console.log(segments);
+        if (segments.length > 2) {
             segments[segments.length - 1] = newSegment;
             const newUrl = segments.join('/');
             this.router.navigateByUrl(newUrl);

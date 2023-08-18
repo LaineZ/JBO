@@ -12,14 +12,6 @@
           {
             "key": "Cache-Control",
             "value": "public,max-age=31536000,immutable"
-          },
-          {
-            "key": "X-Frame-Options",
-            "value": "SAMEORIGIN"
-          },
-          {
-            "key": "Content-Security-Policy",
-            "value": "script-src 'self' firestore.googleapis.com; img-src *; google.com;"
           }
         ]
       },
@@ -31,6 +23,23 @@
             "value": "no-cache"
           }
         ]
+      },
+      {
+      "source": "**",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'none'"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
       }
     ],
     "rewrites": [
@@ -41,6 +50,46 @@
       {
         "source": "/sitemap.xml",
         "destination": "/sitemap.xml"
+      },
+      {
+        "source": "/blog",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/affiliate",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/advertiser",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/careers",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about-us",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contacts",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cookies",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/terms",
+        "destination": "/index.html"
       },
       {
         "source": "/home/**",
@@ -87,58 +136,19 @@
         "destination": "/index.html"
       },
       {
-        "source": "/home",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/blog",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/affiliate",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/advertiser",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/careers",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/about-us",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/contacts",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/faq",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/privacy",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/cookies",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/terms",
-        "destination": "/index.html"
-      },
-      {
         "source": "**",
         "destination": "/404.html",
         "type": 404
       }
     ],
     "redirects": [ {
-      "source": "/",
-      "destination": "/home/en",
+      "source": "/home",
+      "destination": "/",
+      "type": 301
+    }, 
+    {
+      "source": "/home/en",
+      "destination": "/",
       "type": 301
     } ]
   

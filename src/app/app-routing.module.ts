@@ -7,7 +7,7 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'home'
+        component: HomePageComponent,
     },
     {
         path: 'home',
@@ -94,10 +94,6 @@ const routes: Routes = [
     { path: 'privacy', loadChildren: () => import('./privacy-doc/privacy-doc.module').then(m => m.PrivacyDocModule) },
     { path: 'cookies', loadChildren: () => import('./cookies-doc/cookies-doc.module').then(m => m.CookiesDocModule) },
     { path: 'terms', loadChildren: () => import('./terms-of-use-doc/terms-of-use-doc.module').then(m => m.TermsOfUseDocModule) },
-    {
-        path: '**',
-        redirectTo: '/home',
-    }
 ];
 
 @NgModule({
